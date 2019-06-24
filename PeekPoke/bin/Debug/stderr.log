@@ -1,6 +1,0 @@
-2019-03-28 05:04:20.546 PeekPoke[72747:3799089] Failed to connect (clearBtn) outlet from (ViewController) to (NSButton): missing setter or instance variable
-2019-03-28 05:04:20.634 PeekPoke[72747:3799089] Failed to connect (discordLabel) outlet from (ViewController) to (NSView): missing setter or instance variable
-2019-03-28 05:04:20.655 PeekPoke[72747:3799089] Failed to connect (sendPayloadBtn) outlet from (ViewController) to (NSButton): missing setter or instance variable
-2019-03-28 05:04:20.659 PeekPoke[72747:3799089] Could not connect action, target class ViewController does not respond to -toChange:
-2019-03-28 05:04:20.660 PeekPoke[72747:3799089] Could not connect action, target class ViewController does not respond to -fromChange:
-objc[72747]: Class FIFinderSyncExtensionHost is implemented in both /System/Library/PrivateFrameworks/FinderKit.framework/Versions/A/FinderKit (0x7fffacc7f1d0) and /System/Library/PrivateFrameworks/FileProvider.framework/OverrideBundles/FinderSyncCollaborationFileProviderOverride.bundle/Contents/MacOS/FinderSyncCollaborationFileProviderOverride (0x11318ddc8). One of the two will be used. Which one is undefined.
