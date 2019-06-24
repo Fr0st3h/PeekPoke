@@ -1,0 +1,2769 @@
+<doc>
+    <assembly>
+        <name>Xamarin.Essentials</name>
+    </assembly>
+    <members>
+        <member name="T:Xamarin.Essentials.Accelerometer">
+            <summary>
+                <para>Accelerometer data of the acceleration of the device in three dimensional space.</para>
+            </summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Accelerometer.IsMonitoring">
+            <summary>Gets if acceleromter is being monitored.</summary>
+            <value>If monitoring.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Accelerometer.ReadingChanged">
+            <summary>Event triggered when reading of sensor changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Accelerometer.Start(Xamarin.Essentials.SensorSpeed)">
+            <param name="sensorSpeed">
+                <para>Speed to monitor the sensor.</para>
+            </param>
+            <summary>Start monitoring for changes to acceleromter.</summary>
+            <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Accelerometer.Stop">
+            <summary>Stop monitoring for changes to acceleromter.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.AccelerometerChangedEventArgs">
+            <summary>Event arguments containing the current reading.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.AccelerometerChangedEventArgs.Reading">
+            <summary>The current values of accelerometer.</summary>
+            <value>The readin.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.AccelerometerData">
+            <summary>Data representing the devies' three accelerometers.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.AccelerometerData.Acceleration">
+            <summary>Gets the acceleration vector in G's (gravitational force). </summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.AccelerometerData.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.AccelerometerData.Equals(Xamarin.Essentials.AccelerometerData)">
+            <param name="other">Other AccelerometerData to compare with.</param>
+            <summary>Compares the underlying Vector3 instances.</summary>
+            <returns>True if they are equal, otherwise false.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.AccelerometerData.GetHashCode">
+            <summary>Get the hash code for object.</summary>
+            <returns>The hash code</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.AccelerometerData.op_Equality(Xamarin.Essentials.AccelerometerData,Xamarin.Essentials.AccelerometerData)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>Equality operator for equals</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.AccelerometerData.op_Inequality(Xamarin.Essentials.AccelerometerData,Xamarin.Essentials.AccelerometerData)">
+            <param name="left">Left to check</param>
+            <param name="right">Right to check</param>
+            <summary>Inequality check</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.AccelerometerData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.AppInfo">
+            <summary>Represents information about the application.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.AppInfo.BuildString">
+            <summary>Gets the application build number.</summary>
+            <value>The application build number.</value>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.AppInfo.Name">
+            <summary>Gets the application name.</summary>
+            <value>The application name.</value>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.AppInfo.OpenSettings">
+            <summary>Open the settings menu or page for the application.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.AppInfo.PackageName">
+            <summary>Gets the application package name or identifier.</summary>
+            <value>The package name or identifier.</value>
+            <remarks>On android and iOS, this is the application package name. On UWP, this is the application GUID.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.AppInfo.Version">
+            <summary>Gets the application version.</summary>
+            <value>The application version.</value>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.AppInfo.VersionString">
+            <summary>Gets the application version.</summary>
+            <value>The application version.</value>
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.Barometer">
+            <summary>Monitor changes to the atmospheric pressure.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Barometer.IsMonitoring">
+            <summary>Gets if barometer is actively being monitored.</summary>
+            <value>If barometer is being monitored.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Barometer.ReadingChanged">
+            <summary>Event triggered when barometer reading changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Barometer.Start(Xamarin.Essentials.SensorSpeed)">
+            <param name="sensorSpeed">The speed to listen for changes.</param>
+            <summary>Start monitoring for changes to the barometer.</summary>
+            <remarks>Will throw FeatureNotSupportedException if not supported on device.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Barometer.Stop">
+            <summary>Stop monitoring for changes to the barometer.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.BarometerChangedEventArgs">
+            <summary>The current pressure information from the change event.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.BarometerChangedEventArgs.BarometerData">
+            <summary>Gets the current barometer pressure data</summary>
+            <value>Pressure in hPA</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.BarometerChangedEventArgs.Reading">
+            <summary>Get the current reading of the barometer</summary>
+            <value>The reading</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.BarometerData">
+            <summary>
+                <para>Contains the pressure measured by the user's device.</para>
+            </summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BarometerData.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BarometerData.Equals(Xamarin.Essentials.BarometerData)">
+            <param name="other">Other object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BarometerData.GetHashCode">
+            <summary>Get has code for object.</summary>
+            <returns>The hash code.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BarometerData.op_Equality(Xamarin.Essentials.BarometerData,Xamarin.Essentials.BarometerData)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BarometerData.op_Inequality(Xamarin.Essentials.BarometerData,Xamarin.Essentials.BarometerData)">
+            <param name="left">Left to comapre</param>
+            <param name="right">Right to comapre</param>
+            <summary>If not equal to another object</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.BarometerData.Pressure">
+            <summary>Pressure in hPA</summary>
+            <value>The pressure</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BarometerData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Battery">
+            <summary>Methods and properties for battery and charging information of the device.</summary>
+            <remarks>
+                <para>Platform specific remarks:</para>
+                <para>- Android: Battery_Stats permission must be set in manifest.</para>
+                <para>- iOS: Simulator will not return battery information, must be run on device</para>
+                <para>- UWP: None</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Battery.BatteryChanged">
+            <summary>Event trigger when battery properties have changed.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Battery.ChargeLevel">
+            <summary>Gets the current charge level of the device from 0.0 to 1.0.</summary>
+            <value>
+                <para>Level of charge.</para>
+            </value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Battery.PowerSource">
+            <summary>Gets the current power source for the device.</summary>
+            <value>
+                <para>Power source, or uknown.</para>
+            </value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Battery.State">
+            <summary>Gets the charging state of the device if it can be determined.</summary>
+            <value>Battery state, or unknown.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.BatteryChangedEventArgs">
+            <summary>Battery changed information.</summary>
+            <remarks>Returns the current information of the battery.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.BatteryChangedEventArgs.ChargeLevel">
+            <summary>Gets the current charge level of the device from 0.0 to 1.0.</summary>
+            <value>Level of charge.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.BatteryChangedEventArgs.PowerSource">
+            <summary>Gets the current power source for the device.</summary>
+            <value>Power source, or unknown</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.BatteryChangedEventArgs.State">
+            <summary>Gets the charging state of the device if it can be determined.</summary>
+            <value>Battery state, or unknown.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.BatteryChangedEventArgs.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.BatteryPowerSource">
+            <summary>How the device and battery are currently being powered or charged.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryPowerSource.AC">
+            <summary>Power source is an AC Charger.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryPowerSource.Battery">
+            <summary>Power source is the battery and not being charge.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryPowerSource.Unknown">
+            <summary>Power source can not be determined.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryPowerSource.Usb">
+            <summary>Power source is a USB port.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryPowerSource.Wireless">
+            <summary>Power source is wireless.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.BatteryState">
+            <summary>The current state of the battery and if it is being charged or full.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryState.Charging">
+            <summary>Battery is acively being charged by a power source.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryState.Discharging">
+            <summary>Battery is not plugged in and discharging.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryState.Full">
+            <summary>Battery is full.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryState.NotCharging">
+            <summary>Battery is not charging or discharging, but in an inbetween state.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryState.NotPresent">
+            <summary>Battery does not exist on the device.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BatteryState.Unknown">
+            <summary>Battery state could not be determined.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.Browser">
+            <summary>Provides a way to display a web page inside an app.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Browser.OpenAsync(System.String)">
+            <param name="uri">Uri to launch.</param>
+            <summary>Open the browser to specified uri.</summary>
+            <returns>Completed task when browser is launched.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Browser.OpenAsync(System.Uri)">
+            <param name="uri">Uri to launch.</param>
+            <summary>Open the browser to specified uri.</summary>
+            <returns>Completed task when browser is launched.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Browser.OpenAsync(System.String,Xamarin.Essentials.BrowserLaunchMode)">
+            <param name="uri">Uri to launch.</param>
+            <param name="launchMode">How to launch the browser.</param>
+            <summary>Open the browser to specified uri.</summary>
+            <returns>Completed task when browser is launched.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Browser.OpenAsync(System.Uri,Xamarin.Essentials.BrowserLaunchMode)">
+            <param name="uri">Uri to launch.</param>
+            <param name="launchMode">How to launch the browser.</param>
+            <summary>Open the browser to specified uri.</summary>
+            <returns>Completed task when browser is launched.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.BrowserLaunchMode">
+            <summary>Launch type of the browser.</summary>
+            <remarks>Recommended to use the SystemBrowser as it is the default and falls back to UriLauncher.</remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.BrowserLaunchMode.External">
+            <summary>Use the default external launcher to open the browser outside of the app.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.BrowserLaunchMode.SystemPreferred">
+            <summary>Launch the optimized system browser and stay inside of your application. (Chrome Custom Tabs and SFSafariViewController).</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.Clipboard">
+            <summary>Provides a way to work with text on the device clipboard.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Clipboard.GetTextAsync">
+            <summary>Returns any text that is on the clipboard.</summary>
+            <returns>Returns text that is on the clipboard, or null if there is none.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Clipboard.HasText">
+            <summary>Gets a value indicating whether there is any text on the clipboard.</summary>
+            <value>
+                <para />
+            </value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Clipboard.SetText(System.String)">
+            <param name="text">The text to put on the clipboard.</param>
+            <summary>Sets the contents of the clipboard to be the specified text.</summary>
+            <remarks>This method returns immediately and does not guarentee that the text is on the clipboard by the time this method returns</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Compass">
+            <summary>Monitor changes to the orientation of the user's device.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Compass.ApplyLowPassFilter">
+            <summary>Applies a moving average filter on the Android implementation. Unused on other platforms</summary>
+            <value>If a low pass filter is applied</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Compass.IsMonitoring">
+            <summary>Gets if compass is actively being monitored.</summary>
+            <value>If compass is being monitored.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Compass.ReadingChanged">
+            <summary>Event triggered when compass reading changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Compass.ShouldDisplayHeadingCalibration">
+            <summary>Determines if the calibration screen should be displayed.</summary>
+            <value>Gets or sets if this should be displayed when started.</value>
+            <remarks>Only available on iOS</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Compass.Start(Xamarin.Essentials.SensorSpeed)">
+            <param name="sensorSpeed">The speed to monitor for changes.</param>
+            <summary>Start monitoring for changes to the compass.</summary>
+            <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Compass.Stop">
+            <summary>Stop monitoring for changes to the compass.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.CompassChangedEventArgs">
+            <summary>Event arguments when compass reading changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.CompassChangedEventArgs.Reading">
+            <summary>Gets the current reading.</summary>
+            <value>The reading.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.CompassData">
+            <summary>
+                <para>Contains the orientation of the user's device.</para>
+            </summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.CompassData.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.CompassData.Equals(Xamarin.Essentials.CompassData)">
+            <param name="other">Other AccelerometerData to compare with.</param>
+            <summary>Compares the underlying doubles.</summary>
+            <returns>True if they are equal, otherwise false.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.CompassData.GetHashCode">
+            <summary>Get the hash code for object.</summary>
+            <returns>The hash code</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.CompassData.HeadingMagneticNorth">
+            <summary>The heading (measured in degrees) relative to magnetic north.</summary>
+            <value>The magnetic north heading.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.CompassData.op_Equality(Xamarin.Essentials.CompassData,Xamarin.Essentials.CompassData)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>Equality operator for equals</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.CompassData.op_Inequality(Xamarin.Essentials.CompassData,Xamarin.Essentials.CompassData)">
+            <param name="left">Left to check</param>
+            <param name="right">Right to check</param>
+            <summary>Inequality check</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.CompassData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.ConnectionProfile">
+            <summary>Describes the type of connection the device is using.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.ConnectionProfile.Bluetooth">
+            <summary>The bluetooth data connection.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ConnectionProfile.Cellular">
+            <summary>The mobile/cellular data connection.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ConnectionProfile.Ethernet">
+            <summary>The ethernet data connection.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ConnectionProfile.Other">
+            <summary>Other non-known type of connection.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ConnectionProfile.WiFi">
+            <summary>The WiFi data connection.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ConnectionProfile.WiMAX">
+            <summary>The WiMAX data connection.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.Connectivity">
+            <summary>Connectivity and networking helpers.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Connectivity.ConnectivityChanged">
+            <summary>
+                <para>Event that is triggered when a network access or profile has changed.</para>
+            </summary>
+            <remarks>
+                <para>Can throw PermissionException on Android if ACCESS_NETWORK_STATE is not set in manifest.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Connectivity.NetworkAccess">
+            <summary>Gets the current state of network access. Does not guarantee full access to the internet.</summary>
+            <value>The current network access state.</value>
+            <remarks>
+                <para>Can throw PermissionException on Android if ACCESS_NETWORK_STATE is not set in manifest.</para>
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Connectivity.Profiles">
+            <summary>Gets the active connectivity types for the device.</summary>
+            <value>List of all connection profiles.</value>
+            <remarks>
+                <para>Can throw PermissionException on Android if ACCESS_NETWORK_STATE is not set in manifest.</para>
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.ConnectivityChangedEventArgs">
+            <summary>The current connectivity information from the change event.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ConnectivityChangedEventArgs.NetworkAccess">
+            <summary>Gets the current state of network access. Does not guarantee full access to the internet.</summary>
+            <value>The current network access state.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ConnectivityChangedEventArgs.Profiles">
+            <summary>Gets the active connectivity types for the device.</summary>
+            <value>List of all connection profiles.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ConnectivityChangedEventArgs.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.DataTransfer">
+            <summary>Share data such as text and uris to other applications.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.DataTransfer.RequestAsync(System.String)">
+            <param name="text">Text to share.</param>
+            <summary>Show the share user interface to share text.</summary>
+            <returns>Task when completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.DataTransfer.RequestAsync(Xamarin.Essentials.ShareTextRequest)">
+            <param name="request">Share request with options.</param>
+            <summary>Show the share user interface to share text or uri.</summary>
+            <returns>Task when completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.DataTransfer.RequestAsync(System.String,System.String)">
+            <param name="text">Text to share.</param>
+            <param name="title">Title for the share user interface.</param>
+            <summary>Show the share user interface to share text with a title.</summary>
+            <returns>Task when completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.DeviceDisplay">
+            <summary>Represents information about the device screen.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceDisplay.ScreenMetrics">
+            <summary>Gets the screen metrics of the device.</summary>
+            <value>The screen metrics.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.DeviceDisplay.ScreenMetricsChanged">
+            <summary>Event that is triggered when the screen matrics change.</summary>
+            <remarks>Such as screen rotation.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.DeviceInfo">
+            <summary>Represents information about the device.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.DeviceType">
+            <summary>Gets the type of device the application is running on.</summary>
+            <value>The device type.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.Idiom">
+            <summary>Gets the idiom of the device. </summary>
+            <value>The idiom.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.Manufacturer">
+            <summary>Gets the manufacturer of the device.</summary>
+            <value>Device manufacturer.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.Model">
+            <summary>Gets the model of the device.</summary>
+            <value>Device model.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.Name">
+            <summary>Gets the name of the device.</summary>
+            <value>The name of the device (often specified by the user).</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.Platform">
+            <summary>Gets the platform or operating system of the device.</summary>
+            <value>The platform of device.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.Version">
+            <summary>Gets the version of the operating system.</summary>
+            <value>The device operating system.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.DeviceInfo.VersionString">
+            <summary>Gets the version of the operating system.</summary>
+            <value>The version of the operating system.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.DeviceInfo+Idioms">
+            <summary>The device idiom.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Idioms.Desktop">
+            <summary>A desktop device such as laptop or tower.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Idioms.Phone">
+            <summary>A mobile phone.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Idioms.Tablet">
+            <summary>A tablet.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Idioms.TV">
+            <summary>A television.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Idioms.Unsupported">
+            <summary>Unsupported or unknown device.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.DeviceInfo+Platforms">
+            <summary>Platform operating system of the device.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Platforms.Android">
+            <summary>The Android operating system.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Platforms.iOS">
+            <summary>The iOS operating system.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Platforms.Unsupported">
+            <summary>An unknown or unsupported operating system.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceInfo+Platforms.UWP">
+            <summary>Universal Windows Platform.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.DeviceType">
+            <summary>Various types of devices.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceType.Physical">
+            <summary>The device is a physical device, such as an iPhone, Android tablet or Windows desktop.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.DeviceType.Virtual">
+            <summary>The device is virtual, such as the iOS simulators, Android emulators or Windows emulators.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.DistanceUnits">
+            <summary>Distance Unit for use in conversion.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.DistanceUnits.Kilometers">
+            <summary>Kilometers</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.DistanceUnits.Miles">
+            <summary>Miles</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.Email">
+            <summary>Provides an easy way to allow the user to send emails.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Email.ComposeAsync">
+            <summary>Opens the default email client to allow the user to send the message.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Email.ComposeAsync(Xamarin.Essentials.EmailMessage)">
+            <param name="message">The email message.</param>
+            <summary>Opens the default email client to allow the user to send the message.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Email.ComposeAsync(System.String,System.String,System.String[])">
+            <param name="subject">The email subject.</param>
+            <param name="body">The email body.</param>
+            <param name="to">The email recipients.</param>
+            <summary>Opens the default email client to allow the user to send the message with the provided subject, body and recipients.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.EmailBodyFormat">
+            <summary>Represents various types of email body formats.</summary>
+            <remarks />
+        </member>
+        <member name="F:Xamarin.Essentials.EmailBodyFormat.Html">
+            <summary>The email message body is HTML.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.EmailBodyFormat.PlainText">
+            <summary>The email message body is plain text.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.EmailMessage">
+            <summary>Represents a single email message.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.EmailMessage">
+            <summary>Creates a new instance of EmailMessage.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.EmailMessage(System.String,System.String,System.String[])">
+            <param name="subject">The email subject.</param>
+            <param name="body">The email body.</param>
+            <param name="to">The email's recipients.</param>
+            <summary>Creates a new instance of EmailMessage with the specified subject, body and recipients.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.EmailMessage.Bcc">
+            <summary>Gets or sets the email's BCC recipients.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.EmailMessage.Body">
+            <summary>Gets or sets the email's body.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.EmailMessage.BodyFormat">
+            <summary>Gets or sets a value indicating whether the message is in plain text or HTML.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.EmailMessage.Cc">
+            <summary>Gets or sets the email's CC recipients.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.EmailMessage.Subject">
+            <summary>Gets or sets the email's subject.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.EmailMessage.To">
+            <summary>Gets or sets the email's recipients.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.EnergySaverStatus">
+            <summary>Status of energy saver on the device.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.EnergySaverStatus.Off">
+            <summary>Energy save is off</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.EnergySaverStatus.On">
+            <summary>Energy saver is on</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.EnergySaverStatus.Unknown">
+            <summary>Status of energy saver is unknown.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.EnergySaverStatusChangedEventArgs">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.EnergySaverStatusChangedEventArgs.EnergySaverStatus">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.FeatureNotEnabledException">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.FeatureNotEnabledException">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.FeatureNotEnabledException(System.String)">
+            <param name="message">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.FeatureNotEnabledException(System.String,System.Exception)">
+            <param name="message">To be added.</param>
+            <param name="innerException">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.FeatureNotSupportedException">
+            <summary>Exception that occurs when an attempt is made to use a feature on a platform that does not support it.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.FeatureNotSupportedException">
+            <summary>Creates a new instance of FeatureNotSupportedException.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.FeatureNotSupportedException(System.String)">
+            <param name="message">The exception message.</param>
+            <summary>Creates a new instance of FeatureNotSupportedException with the specified message.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.FeatureNotSupportedException(System.String,System.Exception)">
+            <param name="message">The exception message.</param>
+            <param name="innerException">The inner exception.</param>
+            <summary>Creates a new instance of FeatureNotSupportedException with the specified message and inner exception.</summary>
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.FileSystem">
+            <summary>Provides an easy way to access the locations for device folders.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.FileSystem.AppDataDirectory">
+            <summary>Gets the location where app data can be stored.</summary>
+            <value>The location where app data can be stored.</value>
+            <remarks>This location usually is not visible to the user, and is backed up.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.FileSystem.CacheDirectory">
+            <summary>Gets the location where temporary data can be stored.</summary>
+            <value>The location where temporary data can be stored.</value>
+            <remarks>This location usually is not visible to the user, is not backed up, and may be cleared at any time.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.FileSystem.OpenAppPackageFileAsync(System.String)">
+            <param name="filename">the name of the file to load from the app package.</param>
+            <summary>Opens a stream to a file contained withing the app package.</summary>
+            <returns>Returns a stream to the file.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Flashlight">
+            <summary>Turn the Flashlight / Torch / Lamp On and Off.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Flashlight.TurnOffAsync">
+            <summary>Turns the Flashlight Off.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Flashlight.TurnOnAsync">
+            <summary>Turns the Flashlight On.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.Geocoding">
+            <summary>Easily convert between geographic coordinated and place names.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Geocoding.GetLocationsAsync(System.String)">
+            <param name="address">Address to retrieve the lcoation for.</param>
+            <summary>Retrieve location for a given address.</summary>
+            <returns>
+                <para>List of locations that best match the address or null if none found.</para>
+            </returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Geocoding.GetPlacemarksAsync(Xamarin.Essentials.Location)">
+            <param name="location">Location to find placemarks for.</param>
+            <summary>Retrieve placemarks for a given location.</summary>
+            <returns>List of placemarks or null if no placemarks are found.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Geocoding.GetPlacemarksAsync(System.Double,System.Double)">
+            <param name="latitude">Latitude of the location.</param>
+            <param name="longitude">Longitude of the location.</param>
+            <summary>Retrieve location for a given address.</summary>
+            <returns>List of placemarks or null if no placemarks are found.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Geocoding.MapKey">
+            <summary>Get or sets the map API key.</summary>
+            <value>The current key for maps.</value>
+            <remarks>Needed only for UWP and can be generated from Bing Maps.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Geolocation">
+            <summary>Provides a way to get the current location of the device.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Geolocation.GetLastKnownLocationAsync">
+            <summary>Returns the last known location of the device.</summary>
+            <returns>Returns the location.</returns>
+            <remarks>This location may be a recently cached location.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Geolocation.GetLocationAsync">
+            <summary>Returns the current location of the device.</summary>
+            <returns>Returns the location.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Geolocation.GetLocationAsync(Xamarin.Essentials.GeolocationRequest)">
+            <param name="request">The criteria to use when determining the location of the device.</param>
+            <summary>Returns the current location of the device using the specified criteria.</summary>
+            <returns>Returns the location.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Geolocation.GetLocationAsync(Xamarin.Essentials.GeolocationRequest,System.Threading.CancellationToken)">
+            <param name="request">The criteria to use when determining the location of the device.</param>
+            <param name="cancelToken">A token for cancelling the operation.</param>
+            <summary>Returns the current location of the device using the specified criteria.</summary>
+            <returns>Returns the location.</returns>
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.GeolocationAccuracy">
+            <summary>Represents levels of accuracy when determining location.</summary>
+            <remarks />
+        </member>
+        <member name="F:Xamarin.Essentials.GeolocationAccuracy.Best">
+            <summary>Represents the best accuracy, using the most power to obtain and typically within 10 meters.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.GeolocationAccuracy.High">
+            <summary>Represents high accuracy, typically within 10-100 meters.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.GeolocationAccuracy.Low">
+            <summary>Represents low accuracy, typically within 300-3000 meters.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.GeolocationAccuracy.Lowest">
+            <summary>Represents the lowest accuracy, using the least power to obtain and typically within 1000-5000 meters.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.GeolocationAccuracy.Medium">
+            <summary>Represents medium accuracy, typically within 30-500 meters.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.GeolocationRequest">
+            <summary>Represents the criteria for a location request.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.GeolocationRequest">
+            <summary>Creates a new instance of GeolocationRequest.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.GeolocationRequest(Xamarin.Essentials.GeolocationAccuracy)">
+            <param name="accuracy">The desired accuracy.</param>
+            <summary>Creates a new instance of GeolocationRequest with the specified accuracy.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.GeolocationRequest(Xamarin.Essentials.GeolocationAccuracy,System.TimeSpan)">
+            <param name="accuracy">The desired accuracy.</param>
+            <param name="timeout">The request timeout.</param>
+            <summary>Creates a new instance of GeolocationRequest with the specified accuracy and timeout.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.GeolocationRequest.DesiredAccuracy">
+            <summary>Gets or sets the desired accuracy of the resulting location.</summary>
+            <value>The desired accuracy of the location.</value>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.GeolocationRequest.Timeout">
+            <summary>Gets or sets the location request timeout.</summary>
+            <value>The location request timeout.</value>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.GeolocationRequest.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Gyroscope">
+            <summary>Gyroscope data of the rotation around the device's three primary axis.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Gyroscope.IsMonitoring">
+            <summary>Gets if gyro is being monitored.</summary>
+            <value>If monitoring.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Gyroscope.ReadingChanged">
+            <summary>Event triggered when reading of sensor changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Gyroscope.Start(Xamarin.Essentials.SensorSpeed)">
+            <param name="sensorSpeed">Speed to monitor sensor.</param>
+            <summary>Start monitoring for changes to gyro.</summary>
+            <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Gyroscope.Stop">
+            <summary>Stop monitoring for changes to gyro.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.GyroscopeChangedEventArgs">
+            <summary>Event arguments containing the current reading.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.GyroscopeChangedEventArgs.Reading">
+            <summary>Gets the reading of the gyro.</summary>
+            <value>The reading.</value>
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.GyroscopeData">
+            <summary>Gyroscope information.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.GyroscopeData.AngularVelocity">
+            <summary>Gets the angular velocity vector in rad/s.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.GyroscopeData.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.GyroscopeData.Equals(Xamarin.Essentials.GyroscopeData)">
+            <param name="other">Other GyroscopeData to compare with.</param>
+            <summary>Compares the underlying Vector3 instances.</summary>
+            <returns>True if they match, otherwise false.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.GyroscopeData.GetHashCode">
+            <summary>Get the hash code for object.</summary>
+            <returns>The hash code</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.GyroscopeData.op_Equality(Xamarin.Essentials.GyroscopeData,Xamarin.Essentials.GyroscopeData)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>Equality operator for equals</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.GyroscopeData.op_Inequality(Xamarin.Essentials.GyroscopeData,Xamarin.Essentials.GyroscopeData)">
+            <param name="left">Left to check</param>
+            <param name="right">Right to check</param>
+            <summary>Inequality check</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.GyroscopeData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Launcher">
+            <summary>Launches an application specified by the passed uri.</summary>
+            <remarks>Has to be a valid System.Uri</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Launcher.CanOpenAsync(System.String)">
+            <param name="uri">string uri scheme</param>
+            <summary>Queries if device supports opening the uri scheme</summary>
+            <returns>True if opening is supported, otherwise false</returns>
+            <remarks>May throw System.UriFormatException if uri is malformed</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Launcher.CanOpenAsync(System.Uri)">
+            <param name="uri">uri scheme</param>
+            <summary>Queries if device supports opening the uri scheme</summary>
+            <returns>True if opening is supported, otherwise false</returns>
+            <remarks>May throw System.UriFormatException if uri is malformed</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Launcher.OpenAsync(System.String)">
+            <param name="uri">string uri scheme</param>
+            <summary>Launches the app specified by the uri scheme</summary>
+            <returns />
+            <remarks>May throw System.UriFormatException if uri is malformed. Verify if the uri scheme is supported before calling this method</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Launcher.OpenAsync(System.Uri)">
+            <param name="uri">uri scheme</param>
+            <summary>Launches the app specified by the uri scheme</summary>
+            <returns />
+            <remarks>May throw System.UriFormatException if uri is malformed. Verify if the uri scheme is supported before calling this method</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Locale">
+            <summary>Represents a specific geographical, political, or cultural region.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.Locale.Country">
+            <summary>Country name or code.</summary>
+            <value />
+            <remarks>This value may vary between platforms.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Locale.Id">
+            <summary>Unique Id of the Locale.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.Locale.Language">
+            <summary>Language name or code.</summary>
+            <value />
+            <remarks>This value may vary between platforms.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Locale.Name">
+            <summary>Display name of the Locale.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.Location">
+            <summary>The latitude, longitude, and time information reported by the device.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.Location">
+            <summary>Constructor for a location.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.Location(Xamarin.Essentials.Location)">
+            <param name="point">Location to copy values from.</param>
+            <summary>Constructor for a location.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.Location(System.Double,System.Double)">
+            <param name="latitude">Default latitude for location.</param>
+            <param name="longitude">Default longitude for location.</param>
+            <summary>Constructor for a location.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.Location(System.Double,System.Double,System.DateTimeOffset)">
+            <param name="latitude">Default latitude for location.</param>
+            <param name="longitude">Default longitude for location.</param>
+            <param name="timestamp">Timestamp for the location (Utc based).</param>
+            <summary>Constructor for a location.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Accuracy">
+            <summary>Gets or sets the accuracy (in meters) of the location.</summary>
+            <value>The location accuracy.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Altitude">
+            <summary>Gets the Altitude, if available in meters above sea level.</summary>
+            <value>Altidude of location if available.</value>
+            <remarks>Returns 0 or no value if not available.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.CalculateDistance(Xamarin.Essentials.Location,Xamarin.Essentials.Location,Xamarin.Essentials.DistanceUnits)">
+            <param name="locationStart">Start location to calculate from.</param>
+            <param name="locationEnd">End location to calculate from.</param>
+            <param name="units">Units to return.</param>
+            <summary>Calculate distance between two locations.</summary>
+            <returns>Distance between two locations in the unit selected.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.CalculateDistance(System.Double,System.Double,Xamarin.Essentials.Location,Xamarin.Essentials.DistanceUnits)">
+            <param name="latitudeStart">Start latitude to calculate from.</param>
+            <param name="longitudeStart">Start longitude to calculate from.</param>
+            <param name="locationEnd">End location to calculate from.</param>
+            <param name="units">Unit to return.</param>
+            <summary>Calculate distance between two locations.</summary>
+            <returns>Distance calculated.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.CalculateDistance(Xamarin.Essentials.Location,System.Double,System.Double,Xamarin.Essentials.DistanceUnits)">
+            <param name="locationStart">Start location to calculate from.</param>
+            <param name="latitudeEnd">End latitude to calculate from.</param>
+            <param name="longitudeEnd">End longitude to calculate from.</param>
+            <param name="units">Unit to use.</param>
+            <summary>Calculate distance between two locations.</summary>
+            <returns>Distance calculated.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.CalculateDistance(System.Double,System.Double,System.Double,System.Double,Xamarin.Essentials.DistanceUnits)">
+            <param name="latitudeStart">Start latitude to calculate from.</param>
+            <param name="latitudeEnd">End latitude to calculate from.</param>
+            <param name="longitudeStart">Start longitude to calculate from.</param>
+            <param name="longitudeEnd">End longitude to calculate from.</param>
+            <param name="units">Units to return.</param>
+            <summary>Calculate distance between two locations.</summary>
+            <returns>Distance between two locations in the unit selected.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Course">
+            <summary>Degrees relative to true north.</summary>
+            <value>0..360 in degrees relative to true north. null if unavailable.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.KilometersToMiles(System.Double)">
+            <param name="kilometers">
+                <para>Kilometers to convert to miles.</para>
+            </param>
+            <summary>Convert kilometers to miles.</summary>
+            <returns>Miles conversion from kilometers.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Latitude">
+            <summary>Gets or sets the latitude of location.</summary>
+            <value>Latitude of the location.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Longitude">
+            <summary>Gets or sets the longitude of location.</summary>
+            <value>Longitude of the location.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.MilesToKilometers(System.Double)">
+            <param name="miles">Miles to be converted.</param>
+            <summary>Converts miles to kilometers.</summary>
+            <returns>Value of miles converted to kilometers.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Speed">
+            <summary>Speed in meters per second.</summary>
+            <value>Speed measured by the device..</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Location.Timestamp">
+            <summary>Gets or sets the timestamp of the location.</summary>
+            <value>UTC timestamp.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Location.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.LocationExtensions">
+            <summary>Location Extensions</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.LocationExtensions.CalculateDistance(Xamarin.Essentials.Location,Xamarin.Essentials.Location,Xamarin.Essentials.DistanceUnits)">
+            <param name="locationStart">Start location to calculate from.</param>
+            <param name="locationEnd">End location to calculate from.</param>
+            <param name="units">Units to use during calculation.</param>
+            <summary>Extension to calculate distance from location to another location.</summary>
+            <returns>Distance in units fro two locations.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.LocationExtensions.CalculateDistance(Xamarin.Essentials.Location,System.Double,System.Double,Xamarin.Essentials.DistanceUnits)">
+            <param name="locationStart">Start location to calculate from.</param>
+            <param name="latitudeEnd">End latitude to calculate from.</param>
+            <param name="longitudeEnd">End longitude to calculate from.</param>
+            <param name="units">Units to use.</param>
+            <summary>Extension to calculate distance from location to another location.</summary>
+            <returns>Distance calculated.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.LocationExtensions.OpenMapsAsync(Xamarin.Essentials.Location)">
+            <param name="location">Location to open to.</param>
+            <summary>Open maps to this location.</summary>
+            <returns>Task to wait.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.LocationExtensions.OpenMapsAsync(Xamarin.Essentials.Location,Xamarin.Essentials.MapsLaunchOptions)">
+            <param name="location">Location to open to.</param>
+            <param name="options">Options to use.</param>
+            <summary>Open maps to this location.</summary>
+            <returns>Task to wait.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Magnetometer">
+            <summary>Detect device's orentation relative to Earth's magnetic field.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Magnetometer.IsMonitoring">
+            <summary>Gets if magnetometer is being monitored.</summary>
+            <value>If monitoring.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Magnetometer.ReadingChanged">
+            <summary>Event triggered when reading of sensor changes.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Magnetometer.Start(Xamarin.Essentials.SensorSpeed)">
+            <param name="sensorSpeed">Speed to get sensor information.</param>
+            <summary>Start monitoring for changes to magnetometer.</summary>
+            <remarks>Will throw FeatureNotSupportedException if not supported on device. Will throw ArgumentNullException if handler is null.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Magnetometer.Stop">
+            <summary>Stop monitoring for changes to magnetometer.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.MagnetometerChangedEventArgs">
+            <summary>Event arguments containing the current reading.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.MagnetometerChangedEventArgs.Reading">
+            <summary>Gets the reading of the magnetometer.</summary>
+            <value>The reading.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.MagnetometerData">
+            <summary>Data for magnetometer changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.MagnetometerData.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.MagnetometerData.Equals(Xamarin.Essentials.MagnetometerData)">
+            <param name="other">Other MagnetometerData to compare with.</param>
+            <summary>Compares the underlying Vector3 instances.</summary>
+            <returns>True if they match, otherwise false.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.MagnetometerData.GetHashCode">
+            <summary>Get the hash code for object.</summary>
+            <returns>The hash code</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.MagnetometerData.MagneticField">
+            <summary>Gets the magnetic field vector in microteslas.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.MagnetometerData.op_Equality(Xamarin.Essentials.MagnetometerData,Xamarin.Essentials.MagnetometerData)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>Equality operator for equals</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.MagnetometerData.op_Inequality(Xamarin.Essentials.MagnetometerData,Xamarin.Essentials.MagnetometerData)">
+            <param name="left">Left to check</param>
+            <param name="right">Right to check</param>
+            <summary>Inequality check</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.MagnetometerData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.MainThread">
+            <summary>Main Thread helpers.</summary>
+            <remarks>Main Thread helpers.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.MainThread.BeginInvokeOnMainThread(System.Action)">
+            <param name="action">Action to execute.</param>
+            <summary>Invokes an action on the main thread of the application.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.MainThread.IsMainThread">
+            <summary>Gets if it is the current main UI thread.</summary>
+            <value>If main thread.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.MapDirectionsMode">
+            <summary>Directions mode for navigation.</summary>
+            <remarks>
+                <para>Default is none.</para>
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.MapDirectionsMode.Bicycling">
+            <summary>Bicycle route mode.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.MapDirectionsMode.Default">
+            <summary>The default directions mode on the platform.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.MapDirectionsMode.Driving">
+            <summary>Car route mode.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.MapDirectionsMode.None">
+            <summary>No directions mode for map.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.MapDirectionsMode.Transit">
+            <summary>Transit route mode.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.MapDirectionsMode.Walking">
+            <summary>Walking route mode.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.Maps">
+            <summary>Map helpers to open a route to specified places via default platforms maps implementation.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Maps.OpenAsync(Xamarin.Essentials.Location)">
+            <param name="location">Location to open on maps.</param>
+            <summary>Open the installed application to a specific location.</summary>
+            <returns>Task to be completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Maps.OpenAsync(Xamarin.Essentials.Placemark)">
+            <param name="placemark">Placemark to open on maps.</param>
+            <summary>Open the installed application to a specific placemark.</summary>
+            <returns>Task to be completed.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Maps.OpenAsync(System.Double,System.Double)">
+            <param name="latitude">Latitude to open to.</param>
+            <param name="longitude">Longitude to open to.</param>
+            <summary>Open the installed application to a specific location.</summary>
+            <returns>Task to be completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Maps.OpenAsync(Xamarin.Essentials.Location,Xamarin.Essentials.MapsLaunchOptions)">
+            <param name="location">Location to open maps to.</param>
+            <param name="options">Launch options to use.</param>
+            <summary>Open the installed application to a specific location with launch options.</summary>
+            <returns>Task to be completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Maps.OpenAsync(Xamarin.Essentials.Placemark,Xamarin.Essentials.MapsLaunchOptions)">
+            <param name="placemark">Placemark to open maps to.</param>
+            <param name="options">Launch options to use.</param>
+            <summary>Open the installed application to a specific placemark with launch options..</summary>
+            <returns>Task to be completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Maps.OpenAsync(System.Double,System.Double,Xamarin.Essentials.MapsLaunchOptions)">
+            <param name="latitude">Latitude to open to.</param>
+            <param name="longitude">Longitude to open to.</param>
+            <param name="options">Launch options to use.</param>
+            <summary>Open the installed application to a specific location.</summary>
+            <returns>Task to be completed.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.MapsLaunchOptions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.MapsLaunchOptions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.MapsLaunchOptions.MapDirectionsMode">
+            <summary>Directions mode to launch maps for navigation.</summary>
+            <value>Gets the mode.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.MapsLaunchOptions.Name">
+            <summary>Name of destination to display to user.</summary>
+            <value>Gets the name.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.NetworkAccess">
+            <summary>Various states of the connection to the internet.</summary>
+            <remarks />
+        </member>
+        <member name="F:Xamarin.Essentials.NetworkAccess.ConstrainedInternet">
+            <summary>Limited internet access.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.NetworkAccess.Internet">
+            <summary>Local and Internet access.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.NetworkAccess.Local">
+            <summary>Local network access only.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.NetworkAccess.None">
+            <summary>No connectivity.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.NetworkAccess.Unknown">
+            <summary>The state of the connectivity is not known.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.NotImplementedInReferenceAssemblyException">
+            <summary>Exception that occurs when executed from a reference assembly. This usually means that the NuGet was not installed into the app project.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.NotImplementedInReferenceAssemblyException">
+            <summary>Default constructor.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.OrientationSensor">
+            <summary>Device orientation (quaternion) relative to magnetic fields.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.OrientationSensor.IsMonitoring">
+            <summary>Gets of currently monitoring the sensor.</summary>
+            <value>If monitoring.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.OrientationSensor.ReadingChanged">
+            <summary>
+                <para>Event triggered when reading of sensor changes.</para>
+            </summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensor.Start(Xamarin.Essentials.SensorSpeed)">
+            <param name="sensorSpeed">Sensor speed to use.</param>
+            <summary>Starts monitoring orientation sensor with specific speed.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensor.Stop">
+            <summary>Stops monitoring.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.OrientationSensorChangedEventArgs">
+            <summary>Orientation event args when reading changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.OrientationSensorChangedEventArgs.Reading">
+            <summary>Gets the reading when it changes.</summary>
+            <value>The current Reading</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.OrientationSensorData">
+            <summary>Sensor data for orientation.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensorData.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensorData.Equals(Xamarin.Essentials.OrientationSensorData)">
+            <param name="other">Other OrientationSensorData to compare with.</param>
+            <summary>Compares the underlying Quaternion instances.</summary>
+            <returns>True if they match, otherwise false.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensorData.GetHashCode">
+            <summary>Get the hash code for object.</summary>
+            <returns>The hash code</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensorData.op_Equality(Xamarin.Essentials.OrientationSensorData,Xamarin.Essentials.OrientationSensorData)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>Equality operator for equals</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensorData.op_Inequality(Xamarin.Essentials.OrientationSensorData,Xamarin.Essentials.OrientationSensorData)">
+            <param name="left">Left to check</param>
+            <param name="right">Right to check</param>
+            <summary>Inequality check</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.OrientationSensorData.Orientation">
+            <summary>Gets the current orientation that represents a Quaternion.</summary>
+            <value>Gets the current orientation</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.OrientationSensorData.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.PermissionException">
+            <summary>Exception that occures when calling an API that requires a specific exception</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.PermissionException(System.String)">
+            <param name="message">Permission that is required.</param>
+            <summary>Constructor with permission information.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.PhoneDialer">
+            <summary>Open the platform phone dialer to place a call.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.PhoneDialer.Open(System.String)">
+            <param name="number">Phone number to initialize the dialer with. Example 15555555555</param>
+            <summary>Open the phone dialer to a specific phone number.</summary>
+            <remarks>
+                <para />Throws ArgumentNullException if number is not valid.<para>Throws FeatureNotSupportedException if placing phone call is not supported on the device.</para></remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Placemark">
+            <summary>User-friendly description of a geographic coordinate. This contains information such as the name of the place, its address, and other information.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.Placemark">
+            <summary>Default constructor for placemark.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.Placemark(Xamarin.Essentials.Placemark)">
+            <param name="placemark">Placemark to copy.</param>
+            <summary>Constructor to create a deep copy.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.AdminArea">
+            <summary>Gets or sets the administrative area name of the address, for example, "CA", or null if it is unknown.</summary>
+            <value>The admin area.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.CountryCode">
+            <summary>Gets or sets the country ISO code.</summary>
+            <value>The country ISO code.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.CountryName">
+            <summary>Gets or sets the country name.</summary>
+            <value>The country name.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.FeatureName">
+            <summary>Gets or sets the feature name.</summary>
+            <value>The feature name.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.Locality">
+            <summary>Gets or sets the city or town.</summary>
+            <value>The city or town of the locality.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.Location">
+            <summary>Gets or sets the location of the placemark.</summary>
+            <value>The location of the palcemark.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.PostalCode">
+            <summary>Gets or sets the postal code.</summary>
+            <value>The postal code.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.SubAdminArea">
+            <summary>Gets or sets the sub-administrative area name of the address, for example, "Santa Clara County", or null if it is unknown.</summary>
+            <value>The sub-admin area.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.SubLocality">
+            <summary>Gets or sets the sub locality.</summary>
+            <value>The sub locality.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.SubThoroughfare">
+            <summary>Gets or sets optional info: sub street or region.</summary>
+            <value>The sub thoroughfare.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Placemark.Thoroughfare">
+            <summary>Gets or sets the street name.</summary>
+            <value>The street name.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Placemark.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.PlacemarkExtensions">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.PlacemarkExtensions.OpenMapsAsync(Xamarin.Essentials.Placemark)">
+            <param name="placemark">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.PlacemarkExtensions.OpenMapsAsync(Xamarin.Essentials.Placemark,Xamarin.Essentials.MapsLaunchOptions)">
+            <param name="placemark">To be added.</param>
+            <param name="options">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Platform">
+            <summary>Platform specific helpers.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Platform.Init(Android.App.Application)">
+            <param name="application">Application to initialize with.</param>
+            <summary>Initialize Xamarin.Essentials with Android's application class.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Platform.Init(Android.App.Activity,Android.OS.Bundle)">
+            <param name="activity">Activity to use for initialization.</param>
+            <param name="bundle">Bundle of the activity.</param>
+            <summary>Initialize Xamarin.Essentials with Android's activity and bundle.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Platform.OnRequestPermissionsResult(System.Int32,System.String[],Android.Content.PM.Permission[])">
+            <param name="requestCode">The requestCode from the corresponding overridden method in an activity.</param>
+            <param name="permissions">The permissions from the corresponding overridden method in an activity.</param>
+            <param name="grantResults">The grantResults from the corresponding overridden method in an activity.</param>
+            <summary>Pass permission request results from an activity's overridden method to the library for handling internal permission requests.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Power">
+            <summary>Access to device specific power settings.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.Power.EnergySaverStatus">
+            <summary>Gets the current energy saver status of the device.</summary>
+            <value>The current status of energy saver mode.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="E:Xamarin.Essentials.Power.EnergySaverStatusChanged">
+            <summary>Event that is triggered when energy saver status changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Preferences">
+            <summary>A class to interact with the preferences/settings of the native platform.</summary>
+            <remarks>
+                <para>Each platform uses the platform provided native APIs for storing application/user preferences:</para>
+                <list type="bullet">
+                    <item>
+                        <term>iOS: NSUserDefaults</term>
+                    </item>
+                    <item>
+                        <term>Android: SharedPreferences</term>
+                    </item>
+                    <item>
+                        <term>UWP: ApplicationDataContainer</term>
+                    </item>
+                </list>
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Clear">
+            <summary>Clears all keys and values.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Clear(System.String)">
+            <param name="sharedName">Shared container name.</param>
+            <summary>Clears all keys and values.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.ContainsKey(System.String)">
+            <param name="key">Preference key.</param>
+            <summary>Checks the existence of a given key.</summary>
+            <returns>Returns true if the key exists.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.ContainsKey(System.String,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Checks the existence of a given key.</summary>
+            <returns>Returns true if the key exists.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Boolean)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.DateTime)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Double)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Int32)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Int64)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Single)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Boolean,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.DateTime,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Double,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Int32,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Int64,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.Single,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Get(System.String,System.String,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="defaultValue">Default value to return if the key does not exist.</param>
+            <param name="sharedName">Shared container key.</param>
+            <summary>Gets the value for a given key, or the default specified if the key does not exist.</summary>
+            <returns>Value for the given key, or the default if it does not exist.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Remove(System.String)">
+            <param name="key">Preference key.</param>
+            <summary>Removes a key and its associated value if it exists.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Remove(System.String,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Removes a key and its associated value if it exists.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Boolean)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.DateTime)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Double)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Int32)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Int64)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Single)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Boolean,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.DateTime,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Double,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Int32,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Int64,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.Single,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Preferences.Set(System.String,System.String,System.String)">
+            <param name="key">Preference key.</param>
+            <param name="value">Preference value.</param>
+            <param name="sharedName">Shared container name.</param>
+            <summary>Sets a value for a given key.</summary>
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.ScreenLock">
+            <summary>Provides an easy way to keep the device screen on.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenLock.IsActive">
+            <summary>Gets a value that indicates whether the device's screen will stay on.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenLock.RequestActive">
+            <summary>Indicate that the device's screen should stay on.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenLock.RequestRelease">
+            <summary>Indicate that the device's screen can turn off.</summary>
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.ScreenMetrics">
+            <summary>This type represents the properties of the current screen.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenMetrics.Density">
+            <summary>Gets a value representing the current screen density.</summary>
+            <value>
+                <para />
+            </value>
+            <remarks>This value is a multiple value, such that a retina display would be 2.0 or 3.0. On Windows, the scaling percent of 200% means that the density will be 2.0.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenMetrics.Equals(System.Object)">
+            <param name="obj">Object to compare</param>
+            <summary>If equal to another object</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenMetrics.Equals(Xamarin.Essentials.ScreenMetrics)">
+            <param name="other">The other ScreenMetrics</param>
+            <summary>If equal to another ScreenMetrics</summary>
+            <returns>If equal</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenMetrics.GetHashCode">
+            <summary>Get the hash code for object.</summary>
+            <returns>The hash code</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenMetrics.Height">
+            <summary>Gets the height of the screen for the current orientation.</summary>
+            <value>
+                <para />
+            </value>
+            <remarks>This value is the height after rotation, so a landscape iPhone will have a smaller height than width.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenMetrics.op_Equality(Xamarin.Essentials.ScreenMetrics,Xamarin.Essentials.ScreenMetrics)">
+            <param name="left">Left to compare</param>
+            <param name="right">Right to compare</param>
+            <summary>Equality operator for equals</summary>
+            <returns>If equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenMetrics.op_Inequality(Xamarin.Essentials.ScreenMetrics,Xamarin.Essentials.ScreenMetrics)">
+            <param name="left">Left to check</param>
+            <param name="right">Right to check</param>
+            <summary>Inequality check</summary>
+            <returns>If not equal</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenMetrics.Orientation">
+            <summary>Gets the orientation of the device.</summary>
+            <value>
+                <para />
+            </value>
+            <remarks>If the device is a square device, then the orientation will be portrait.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenMetrics.Rotation">
+            <summary>Gets the current rotation from the designed orientation.</summary>
+            <value>
+                <para />
+            </value>
+            <remarks>This represents the degrees that the device has been rotated. For example, if this is a phone (which is designed for portrait) that has been rotated to landscape with the main buttoms to the right, then the device has been rotated to the left by 90 degrees.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.ScreenMetrics.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenMetrics.Width">
+            <summary>Gets the width of the screen in the current orientation.</summary>
+            <value>
+                <para />
+            </value>
+            <remarks>This value is the width after rotation, so a landscape Android phone will have a larget width than height.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.ScreenMetricsChangedEventArgs">
+            <summary>Screen metric event arguments.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.ScreenMetricsChangedEventArgs(Xamarin.Essentials.ScreenMetrics)">
+            <param name="metrics">New screen metrics.</param>
+            <summary>Constructor that takes new screen matrics.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ScreenMetricsChangedEventArgs.Metrics">
+            <summary>Gets the new screen metrics.</summary>
+            <value>The screen metrics.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.ScreenOrientation">
+            <summary>Screen orientation.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenOrientation.Landscape">
+            <summary>Screen is in landscape.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenOrientation.Portrait">
+            <summary>Screen is in portrait.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenOrientation.Unknown">
+            <summary>Unknown screen orientation.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.ScreenRotation">
+            <summary>Screen rotation.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenRotation.Rotation0">
+            <summary>Rotated 0 degrees.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenRotation.Rotation180">
+            <summary>Rotated 180 degrees.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenRotation.Rotation270">
+            <summary>Rotated 270 degrees.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.ScreenRotation.Rotation90">
+            <summary>Rotated 90 degrees.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.SecureStorage">
+            <summary>Provides simple secure storage for key/value pairs.</summary>
+            <remarks>
+                <para>Each platform uses the platform provided native API's for storing data securely:</para>
+                <list type="bullet">
+                    <item>
+                        <term>iOS: Data is stored in KeyChain. Additional information on SecAccessible at: <see cref="https://developer.xamarin.com/api/type/Security.SecAccessible/" /></term>
+                    </item>
+                    <item>
+                        <term>Android: Encryption keys are stored in KeyStore and encrypted data is stored in a named shared preference container (PackageId.Xamarin.Essentials).</term>
+                    </item>
+                    <item>
+                        <term>UWP: Data is encrypted with DataProtectionProvider and stored in a named ApplicationDataContainer (with a container name of ApplicationId.Xamarin.Essentials).</term>
+                    </item>
+                </list>
+                <para>NOTE: On Android devices running below API 23 (6.0 Marshmallow) there is no AES available in KeyStore.  As a best practice this API will generate an RSA/ECB/PKCS7Padding key pair stored in KeyStore (the only type supported in KeyStore by these lower API levels), which is used to wrap an AES key generated at runtime.  This wrapped key is stored in Preferences.</para>
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.SecureStorage.DefaultAccessible">
+            <summary>iOS: Default SecAccessible to use for all Get/Set calls to KeyChain. Default value is AfterFirstUnlock.</summary>
+            <value>The SecAccessible to use for all KeyChain access.</value>
+            <remarks>For more information see: <see cref="https://developer.xamarin.com/api/type/Security.SecAccessible/" /></remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.SecureStorage.GetAsync(System.String)">
+            <param name="key">Storage Key.</param>
+            <summary>Gets the decrypted value for a given Key.</summary>
+            <returns>Decrypted string.</returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.SecureStorage.Remove(System.String)">
+            <param name="key">The key to remove.</param>
+            <summary>Removes the encrypted key/value pair for the given key.</summary>
+            <returns>Returns true if the key value pair was removed.</returns>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.SecureStorage.RemoveAll">
+            <summary>Removes all of the stored encrypted key/value pairs.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.SecureStorage.SetAsync(System.String,System.String)">
+            <param name="key">Storage Key.</param>
+            <param name="value">The value to be encrypted.</param>
+            <summary>Stores the value which is encrypted, for a given Key.</summary>
+            <returns>
+                <para />
+            </returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.SecureStorage.SetAsync(System.String,System.String,Security.SecAccessible)">
+            <param name="key">Storage Key.</param>
+            <param name="value">The value to be encrypted.</param>
+            <param name="accessible">The KeyChain accessibility to create the encrypted record with.</param>
+            <summary>Stores the value which is encrypted, for a given Key. iOS override to specify SecAccessible for the KeyChain.</summary>
+            <returns>
+                <para />
+            </returns>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.SensorSpeed">
+            <summary>Sensor speed to monitor for changes.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="F:Xamarin.Essentials.SensorSpeed.Fastest">
+            <summary>Get the sensor data as fast as possible.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.SensorSpeed.Game">
+            <summary>Rate suitable for games.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.SensorSpeed.Normal">
+            <summary>Default rate suitable for screen orientation changes.</summary>
+        </member>
+        <member name="F:Xamarin.Essentials.SensorSpeed.UI">
+            <summary>Rate suitable for general user interface.</summary>
+        </member>
+        <member name="T:Xamarin.Essentials.ShareTextRequest">
+            <summary>Standard request for sharing text to other applications.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.ShareTextRequest">
+            <summary>Default constructor.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.ShareTextRequest(System.String)">
+            <param name="text">Text to share.</param>
+            <summary>Share request with text.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.ShareTextRequest(System.String,System.String)">
+            <param name="text">Text to share.</param>
+            <param name="title">Title for share user interface.</param>
+            <summary>Share request with text and title.</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ShareTextRequest.Subject">
+            <summary>Gets or sets the subject that is sometimes used for applications such as mail clients.</summary>
+            <value>The subject.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ShareTextRequest.Text">
+            <summary>Gets or tsets the main text or message to share.</summary>
+            <value>The main text.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ShareTextRequest.Title">
+            <summary>Gets or sets the title to use on the share user interface.</summary>
+            <value>The title to display.</value>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.ShareTextRequest.Uri">
+            <summary>Gets or sets a valid Uri to share.</summary>
+            <value>The uri that will be shared.</value>
+            <remarks>This must be a valid uri or an exception will be thrown.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.Sms">
+            <summary>Provides an easy way to allow the user to send SMS messages.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Sms.ComposeAsync">
+            <summary>Opens the default SMS client to allow the user to send the message.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Sms.ComposeAsync(Xamarin.Essentials.SmsMessage)">
+            <param name="message">The message to send.</param>
+            <summary>Opens the default SMS client to allow the user to send the message.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.SmsMessage">
+            <summary>Represents a single SMS message.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.SmsMessage">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:Xamarin.Essentials.SmsMessage(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <param name="body">Content of the message</param>
+            <param name="recipients">Recipients to receive the message.</param>
+            <summary>Creates a new instance of SmsMessage</summary>
+            <remarks>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.SmsMessage.Body">
+            <summary>Gets the body of the message.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.SmsMessage.Recipients">
+            <summary>Gets the recipient of the message.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.SpeakSettings">
+            <summary>Text to Speech Settings.</summary>
+            <remarks />
+        </member>
+        <member name="C:Xamarin.Essentials.SpeakSettings">
+            <summary />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.SpeakSettings.Locale">
+            <summary>Gets or Sets a specific Locale to use with text to speech.</summary>
+            <value />
+            <remarks>The Language property should match a Locale value returned by GetLocalesAsync().</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.SpeakSettings.Pitch">
+            <summary>The pitch to use when speaking.</summary>
+            <value />
+            <remarks>This value should be between 0f and 2.0f.</remarks>
+        </member>
+        <member name="P:Xamarin.Essentials.SpeakSettings.Volume">
+            <summary>The volume to use when speaking.</summary>
+            <value />
+            <remarks>This value should be between 0f and 1.0f.</remarks>
+        </member>
+        <member name="T:Xamarin.Essentials.TextToSpeech">
+            <summary>Speak text to Speech</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.TextToSpeech.GetLocalesAsync">
+            <summary>Gets a list of Locales supported by Text to Speech.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.TextToSpeech.SpeakAsync(System.String,System.Threading.CancellationToken)">
+            <param name="text">The text to speak..</param>
+            <param name="cancelToken">Optional cancellation token to stop speaking.</param>
+            <summary>Speaks the given text with default settings.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.TextToSpeech.SpeakAsync(System.String,Xamarin.Essentials.SpeakSettings,System.Threading.CancellationToken)">
+            <param name="text">The text to speak.</param>
+            <param name="settings">The settings to use for speaking.</param>
+            <param name="cancelToken">Optional cancellation token to stop speaking.</param>
+            <summary>Speaks the given text with the specified settings.</summary>
+            <returns />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.VersionTracking">
+            <summary>Provides an easy way to track an app's version on a device.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.BuildHistory">
+            <summary>Gets the collection of build numbers of the app that ran on this device.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.CurrentBuild">
+            <summary>Gets the current build of the app.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.CurrentVersion">
+            <summary>Gets the current version number of the app.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.FirstInstalledBuild">
+            <summary>Gets the build number of first version of the app that was installed on this device.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.FirstInstalledVersion">
+            <summary>Gets the version number of the first version of the app that was installed on this device.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.IsFirstLaunchEver">
+            <summary>Gets a value indicating whether this is the first time this app has ever been launched on this device.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.VersionTracking.IsFirstLaunchForBuild(System.String)">
+            <param name="build">The build number.</param>
+            <summary>Determines if this is the first launch of the app for a specified build number.</summary>
+            <returns>Returns true if this is the first launch of the app for the specified build number; otherwise false.</returns>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.IsFirstLaunchForCurrentBuild">
+            <summary>Gets a value indicating if this is the first launch of the app for the current build number.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.IsFirstLaunchForCurrentVersion">
+            <summary>Gets a value indicating if this is the first launch of the app for the current version number.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.VersionTracking.IsFirstLaunchForVersion(System.String)">
+            <param name="version">The version number.</param>
+            <summary>Determines if this is the first launch of the app for a specified version number.</summary>
+            <returns>Returns true if this is the first launch of the app for the specified version number; otherwise false.</returns>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.PreviousBuild">
+            <summary>Gets the build number for the previously run version.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.PreviousVersion">
+            <summary>Gets the version number for the previously run version.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.VersionTracking.Track">
+            <summary>Starts tracking version information.</summary>
+            <remarks />
+        </member>
+        <member name="P:Xamarin.Essentials.VersionTracking.VersionHistory">
+            <summary>Gets the collection of version numbers of the app that ran on this device.</summary>
+            <value />
+            <remarks />
+        </member>
+        <member name="T:Xamarin.Essentials.Vibration">
+            <summary>Provides an easy way to make the device vibrate.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Vibration.Cancel">
+            <summary>Cancel any current vibrations.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Vibration.Vibrate">
+            <summary>Vibrate the device fo 500ms.</summary>
+            <remarks />
+        </member>
+        <member name="M:Xamarin.Essentials.Vibration.Vibrate(System.Double)">
+            <param name="duration">The number of milliseconds to vibrate for.</param>
+            <summary>Vibrate the device for the specified number of milliseconds in the range [0, 5000].</summary>
+            <remarks>On iOS, the device will only vibrate for 500ms, regardless of the value specified.</remarks>
+        </member>
+        <member name="M:Xamarin.Essentials.Vibration.Vibrate(System.TimeSpan)">
+            <param name="duration">The time to vibrate for.</param>
+            <summary>Vibrate the device for the specified time in the range [0, 5000]ms.</summary>
+            <remarks>On iOS, the device will only vibrate for 500ms, regardless of the value specified.</remarks>
+        </member>
+    </members>
+</doc>

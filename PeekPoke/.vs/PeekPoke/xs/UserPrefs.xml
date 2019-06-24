@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{61647901-0CEC-4FE7-BAF6-B7ADCF47E28F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ViewController.cs">
+    <Files>
+      <File FileName="../../../../../Volumes/BOOTCAMP/Users/CMTFrosty/Desktop/Menu/vanilla/source/main.c" Line="1" Column="1" />
+      <File FileName="../../../Downloads/Menu 2/vanilla/source/main.c" Line="335" Column="1" />
+      <File FileName="PTTableDelegate.cs" Line="58" Column="24" />
+      <File FileName="ViewController.cs" Line="1131" Column="17" />
+      <File FileName="ScanTableDelegate.cs" Line="9" Column="18" />
+      <File FileName="PTTable.cs" Line="25" Column="2" />
+      <File FileName="PTTableDataSource.cs" Line="9" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PeekPoke" expanded="True">
+            <Node name="PeekPoke" expanded="True">
+              <Node name="Main.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PeekPoke PreferredExecutionTarget="Test1" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
